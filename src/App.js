@@ -24,8 +24,8 @@ function App() {
   return (
     <div className="App">
       <Input value = {value}
-             onChange = {handleChange}
-             
+             onChange = {(e) => handleChange(e)}
+             handleSubmit = {(e) => handleSubmit(e)}
       />
     </div>
   );

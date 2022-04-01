@@ -1,6 +1,12 @@
-function Input(){
+function Input(props){
     return (
-        <h1></h1>
+        <div>
+            <form onSubmit={props.handleSubmit} >
+                <h1> Weather Now </h1>
+                <input type="text" placeholder="Your zipcode" onChange={props.handleChange} />
+                <input type="button" />
+            </form>
+        </div>
     )
 }
 export default Input;
